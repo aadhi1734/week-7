@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+struct student
+{
+    int RollNo;
+    char Name[20];
+    int Marks[5];
+};
+int main()
+{
+    struct student s1;
+    printf("Name RollNo Marks sub 1,2,3,4,5:\n");
+    scanf("%s %d",&s1.Name,&s1.RollNo,&s1.Marks[0],&s1.Marks[1],&s1.Marks[2],&s1.Marks[3],&s1.Marks[4]);
+    int i,k;
+    for(i=0,k=0;i<5;i++)
+    k+=s1.Marks[i];
+    k/=5;
+    printf("average is %d",k);
+    return 0;
+}

@@ -1,0 +1,32 @@
+//this program prints GCD of two numbers of two numbers using recursion...
+#include<stdio.h>
+#include<math.h>
+
+void fun(int a,int c,int b)
+{
+    if((a%c==0) && (b%c==0))
+    {
+    printf("GCD = %d",c);
+    
+    }
+    else
+    fun(a,c-1,b);
+
+}
+
+int main()
+{
+	int a,b,min;
+    scanf("%d %d",&a,&b);
+    if(a<b);
+    else
+    {
+        min=b;
+        b=a;
+        a=min;
+    }
+    min=b;
+	fun(a,a,b);
+
+	return 0;
+}
